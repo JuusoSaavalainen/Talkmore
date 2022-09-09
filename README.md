@@ -1,12 +1,13 @@
 # Foorumi / Keskustelupalsta
-Tarkoituksena on tuottaa hyvinkin valmiin esimerkin eli keskustelusovelluksen tapainen sovellus.
+Tarkoituksena on tuottaa valmiin esimerkin eli keskustelusovelluksen tapainen sovellus.
 
-Jotaikin ominaisuuksia joita esimerkissä on listattu voi jäädä toteuttamatta ja jotatakin saattaa tulla lisää.
+Joitakin ominaisuuksia joita esimerkissä on listattu voi jäädä toteuttamatta ja jotatakin saattaa tulla lisää.
 
 Esimerkkin mukaiset ominaisuudet toimivat ikäänkuin pohjana ja suuntana vastaavalle omalle tuotokselle.
 
 
 **---------------------------------------------------------------------------------------------------------------------------------------------**
+
 TÄMÄ ESIMERKKI ON KOPIOITU SUORAAN TSOHA MATERIAALISTA 
 
 *Keskustelusovellus
