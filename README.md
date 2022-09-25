@@ -1,32 +1,18 @@
 # Foorumi / Keskustelupalsta
-Tarkoituksena on tuottaa valmiin esimerkin eli keskustelusovelluksen tapainen sovellus.
+[heroku linkki](https://tba-forum.herokuapp.com)
 
-Joitakin ominaisuuksia joita esimerkissä on listattu voi jäädä toteuttamatta ja jotatakin saattaa tulla lisää.
+Projektin on tarkoitus olla keskutelu foorumin tyylinen palvelu.
 
-Esimerkkin mukaiset ominaisuudet toimivat ikäänkuin pohjana ja suuntana vastaavalle omalle tuotokselle.
+Nykyisessä vaiheessa se on hyvin alkeellinen foorumi, joka sisältää rekistöröinnin, kirjautumisen, uloskirjauksen, keskustelujen luonnin ja kommentoinnin.
+
+Se ei kuitenkaa ole vielä todellakaan valmis , kommentteja tai kirjautumistietoja ei ole rajoitettu ne on vain luotu jotta sovellusta voi testata.
+Virheiden käsittely tai koodin formatointia ei myöskään ole aloitettu.
+
+Myös paljon ominaisuuksia puuttuu kuten roolit, kommenttejen poistaminen ym. 
+
+Projekti on niin sanotusti barebone vaiheessa eikä ulkoasua ole tehty ollenkaan. SQL skeemakin on luotu nykyisen vaiheen mukaisesti ja se tulee laajenemaan ja muuttumaan vielä.
+
+Se kuitenkin hyvin alkeellisesti _toimii_ vaikka se sisältää haavoittuvuuksia ym.
 
 
-**---------------------------------------------------------------------------------------------------------------------------------------------**
 
-TÄMÄ ESIMERKKI ON KOPIOITU SUORAAN TSOHA MATERIAALISTA 
-
-*Keskustelusovellus
-Sovelluksessa näkyy keskustelualueita, joista jokaisella on tietty aihe. Alueilla on keskusteluketjuja, jotka muodostuvat viesteistä. Jokainen käyttäjä on peruskäyttäjä tai ylläpitäjä.*
-
-*Sovelluksen ominaisuuksia:*
-
-*Käyttäjä voi kirjautua sisään ja ulos sekä luoda uuden tunnuksen.*
-
-*Käyttäjä näkee sovelluksen etusivulla listan alueista sekä jokaisen alueen ketjujen ja viestien määrän ja viimeksi lähetetyn viestin ajankohdan.*
-
-*Käyttäjä voi luoda alueelle uuden ketjun antamalla ketjun otsikon ja aloitusviestin sisällön.*
-
-*Käyttäjä voi kirjoittaa uuden viestin olemassa olevaan ketjuun.*
-
-*Käyttäjä voi muokata luomansa ketjun otsikkoa sekä lähettämänsä viestin sisältöä. Käyttäjä voi myös poistaa ketjun tai viestin.*
-
-*Käyttäjä voi etsiä kaikki viestit, joiden osana on annettu sana.*
-
-*Ylläpitäjä voi lisätä ja poistaa keskustelualueita.*
-
-*Ylläpitäjä voi luoda salaisen alueen ja määrittää, keillä käyttäjillä on pääsy alueelle.*
