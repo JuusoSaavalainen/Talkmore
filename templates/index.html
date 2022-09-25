@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+<ul>
+{% for title in titles %}
+<li><a href="/topic/{{ title.id }}">{{ title.title }}</a>
+{% endfor %}
+</ul>
+{% endblock %}

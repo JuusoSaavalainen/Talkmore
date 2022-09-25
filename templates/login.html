@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+
+{% if session.user_id %}
+Allready logged in as <b>{{ session.user_name }}</b>
+<p>
+Back to <a href="/">homepage</a>
+
+{% else %}
+
+<h2>Login to use forum</h2>
+
+<form action="/login" method="POST">
+    Username:
+    <input type="text" name="Username">
+    <br>
+    <p>
+    Password:
+    <input type="password" name="Password">
+    <br>
+    <p>
+    <input type="submit" value="Login">
+    </form>
+    Create account <a href="/register">here</a>
+
+{% endif %}
+
+
+{% endblock %}

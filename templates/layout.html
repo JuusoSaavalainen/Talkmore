@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<title> TBA FORUM </title>
+<h1> TBA FORUM </h1>
+
+{% if session.user_id %}
+Logged in as <b>{{ session.user_name }}</b>
+Create new topic <a href="/newtopic">here</a>
+<a href="/logout">Logout</a>
+
+{% else %}
+Log in <a href="/login">here</a>
+{% endif %}
+
+<hr>
+{% block content %}{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Create new talking topic</h2>
+
+<form action="/newtopic" method="post">
+
+<p>Name of the topic<br>
+<input type="text" name="Topicname" minlength="1" maxlength="22"></p>
+
+<p>Starting comment<br>
+<textarea name="comments" rows="8" cols="20" maxlength="10000">
+placeholder
+</textarea></p>
+
+<input type="submit" value="Create">
+
+<input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
+
+</form>
+
+<a href="/">Back to the home</a>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>{{ title }}</h2>
+creator: {{ creator }}
+
+<ul>
+{% for i in comments %}
+<h4>{{ i[0] }}</h4>
+<p>{{ i[1] }}</p>
+{% endfor %}
+</ul>
+
+{% if session.user_id %}
+<form action="/topic/{{ id }}" method="post">
+
+<p>Add comment<br>
+<textarea name="comments" rows="8" cols="20" maxlength="10000">
+placeholder
+</textarea></p>
+    
+<input type="submit" value="Comment">
+<input type="hidden" name="topic_id" value="{{ id  }}">
+<input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
+    
+</form>
+{% endif %}
+<p>
+<a href="/">Back to the home</a>
+    
+
+
+{% endblock %}
