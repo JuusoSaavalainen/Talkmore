@@ -16,7 +16,8 @@ def newtopic():
         accounts.check_csrf()
         
         topic_name = request.form['Topicname']
-        #virheen käsittely tähän
+        if ' ' in topic_name[0]:
+            return render_template('error.html', message='Name of the topic cant start with empty space')
         first_comm = request.form['comments']
         #virheen käsittely tähän
         topic_idr = topics.add_topic(topic_name, first_comm, accounts.user_id()) 
