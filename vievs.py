@@ -26,7 +26,8 @@ def newtopic():
 @app.route("/logout")
 def logout():
     accounts.logout()
-    return redirect("/")
+    return render_template('succes.html', message='logged out!')
+
 
 
 @app.route("/topic/<int:topic_id>", methods=["get","post"])
@@ -57,7 +58,7 @@ def login():
 
         if not accounts.login(usern, passw):
             return render_template('error.html', message='Invalid credentials please try again')
-        return redirect("/")
+        return render_template('succes.html', message='logged in!')
 
 @app.route("/register", methods=["get", "post"])
 def register():
@@ -70,4 +71,4 @@ def register():
         passw2 = request.form["password2"]
         if accounts.register(usern, passw1) == False:
             return render_template("error.html", message='Username was already taken')
-        return redirect("/")
+        return render_template('succes.html', message='registered, i logged you in!')
