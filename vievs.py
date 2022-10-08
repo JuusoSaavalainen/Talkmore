@@ -68,5 +68,6 @@ def register():
         usern = request.form["username"]
         passw1 = request.form["password1"]
         passw2 = request.form["password2"]
-        accounts.register(usern, passw1)
+        if accounts.register(usern, passw1) == False:
+            return render_template("error.html", message='Username was already taken')
         return redirect("/")

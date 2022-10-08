@@ -2,26 +2,26 @@
 {% block content %}
 
 {% if session.user_id %}
-Allready logged in as <b>{{ session.user_name }}</b>
+<div class="alert alert-danger" role="alert">
+    Error: {{ session.user_name }} already logged in
+</div>
 <p>
 Back to <a href="/">homepage</a>
 
 {% else %}
 
-<h2>Login to use forum</h2>
-
+<h2 class="text-center">Login to use forum</h2>
 <form action="/login" method="POST">
-    Username:
-    <input type="text" name="Username">
-    <br>
-    <p>
-    Password:
-    <input type="password" name="Password">
-    <br>
-    <p>
-    <input type="submit" value="Login">
-    </form>
-    Create account <a href="/register">here</a>
+<div class="text-center">
+<p>
+Username: <br><input type="text" name="Username">
+<p>
+Password:<br><input type="password" name="Password">
+<p>
+<input type="submit" value="Login">
+</form>
+
+</div>
 
 {% endif %}
 

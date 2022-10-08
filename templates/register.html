@@ -2,15 +2,20 @@
 {% block content %}
 
 {% if session.user_id %}
-Allready logged in as <b>{{ session.user_name }}</b>
+<div class="alert alert-danger" role="alert">
+    Error: {{ session.user_name }} already logged in
+</div>
 <p>
 Back to <a href="/">homepage</a>
 
 {% else %}
 
-<h2> Register </h2>
+
+<h2 class="text-center"> Register </h2>
 
 <form action="/register" method="post">
+<div class="text-center">
+<p>
 Username: <br><input type="text" name="username" minlength="1" maxlength="14">
 <p>
 Password: <br><input type="password" name="password1"> 
@@ -20,8 +25,8 @@ Password again: <br><input type="password" name="password2">
 <input type="submit" value="Register"> 
 </form>
 
-<a href="/login">Back to Login</a>
-
+</div>
 {% endif %}
 
 {% endblock %}
+

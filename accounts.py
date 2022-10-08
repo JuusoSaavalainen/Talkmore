@@ -17,11 +17,17 @@ def login(name, password):
     return True
 
 def register(name, password):
+    sql = "SELECT name FROM users WHERE name=:name"
+    result = db.session.execute(sql, {"name":name})
+    acc = result.fetchone()
+    if acc:
+        return False
     hash = generate_password_hash(password)
     sqlcom = "INSERT INTO users (name, password) VALUES (:name, :password)"
     db.session.execute(sqlcom, {"name":name, "password":hash})
     db.session.commit()
     return login(name, password)
+    
 
 def logout():
     del session['user_id']
@@ -33,3 +39,4 @@ def check_csrf():
 
 def user_id():
     return session.get("user_id", 0)
+

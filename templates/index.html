@@ -1,8 +1,23 @@
 {% extends "layout.html" %}
 {% block content %}
-<ul>
-{% for title in titles %}
-<li><a href="/topic/{{ title.id }}">{{ title.title }}</a>
-{% endfor %}
-</ul>
-{% endblock %}
+
+    {% for title in titles %}
+    <p>
+    <div class="card text-center mx-auto" style="width: 40rem;">
+      <div class="card-header">
+        Hashtags here
+      </div>
+      <div class="card-body mx-auto" style="width: 40rem;">
+        <h5 class="card-title">{{ title.title }}</h5>
+        <p class="card-text">First comment here</p>
+        <a href="/topic/{{ title.id }}" class="btn btn-primary">Read</a>
+      </div>
+      <div class="card-footer text-muted mx-auto" style="width: 40rem;">
+        add timestamps here / likes
+      </div>
+    </div>
+    <p>
+    {% endfor %}
+    
+  </body>
+</html>{% endblock %}
