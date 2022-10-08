@@ -5,7 +5,7 @@ import topics
 
 @app.route("/")
 def index():
-    return render_template('index.html', titles=topics.get_all_topic_titles())
+    return render_template('index.html', titles=reversed(topics.get_all_topic_titles()))
 
 @app.route("/newtopic", methods=["get","post"])
 def newtopic():
