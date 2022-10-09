@@ -39,6 +39,9 @@
 </div>
 </form>
 {% endif %}
+
+
+{% if not session.user_id %}
 <p>
     <h1 class="text-center">{{ title }}</h1>
     <p class="text-center">creator: {{ creator }}</p>
@@ -66,4 +69,5 @@
     <a>
     <h1 class="text-center text"> If you want to comment or like 
          <a href="/login">log in</a></h1>
+{% endif %}
 {% endblock %}

@@ -1,3 +1,5 @@
+DROP TABLE users, topic, comments, hearts;
+
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name TEXT,
@@ -19,8 +21,8 @@ CREATE TABLE comments (
 );
 
 CREATE TABLE hearts (
-    acc_id INTEGER REFERENCES users NOTNULL,
-    comm_id INTEGER REFERENCES comments NOTNULL,
+    acc_id INTEGER REFERENCES users,
+    comm_id INTEGER REFERENCES comments,
     PRIMARY KEY (acc_id, comm_id)
 );
 CREATE INDEX ON hearts (comm_id)
