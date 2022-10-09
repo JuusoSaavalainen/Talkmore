@@ -1,7 +1,7 @@
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name TEXT,
-    password TEXT,
+    password TEXT
 );
 
 CREATE TABLE topic (
@@ -18,4 +18,12 @@ CREATE TABLE comments (
     comment TEXT
 );
 
+CREATE TABLE hearts (
+    acc_id INTEGER REFERENCES users NOTNULL,
+    comm_id INTEGER REFERENCES comments NOTNULL,
+    PRIMARY KEY (acc_id, comm_id)
+);
+CREATE INDEX ON hearts (comm_id)
+    
+    
 

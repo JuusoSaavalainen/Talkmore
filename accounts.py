@@ -2,6 +2,7 @@ import os
 from db import db
 from flask import abort , request , session
 from werkzeug.security import check_password_hash, generate_password_hash
+from datetime import datetime
 
 def login(name, password):
     sql = "SELECT password, id FROM users WHERE name=:name"
@@ -15,6 +16,7 @@ def login(name, password):
     session['user_name'] = name
     session['csrf_token'] = os.urandom(16).hex()
     return True
+
 
 def register(name, password):
     sql = "SELECT name FROM users WHERE name=:name"
@@ -40,3 +42,8 @@ def check_csrf():
 def user_id():
     return session.get("user_id", 0)
 
+def t_stamp_to_str(timestamp):
+    dt = datetime.fromtimestamp(timestamp)
+    strdate = dt.strftime("-%d-%m-%Y, %H:%M:%S")
+    return strdate
+    

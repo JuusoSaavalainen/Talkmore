@@ -1,12 +1,23 @@
 {% extends "layout.html" %}
 {% block content %}
 
+{% if session.user_id %}
 <h1 class="text-center">{{ title }}</h1>
 <p class="text-center">creator: {{ creator }}</p>
 {% for i in comments %}
 
-<div class="card text-bg-primary mb-3 mx-auto" style="max-width: 50rem;">
-    <div class="card-header">#hasstaks | {{ i[0] }}  </div>
+<div class="card text-bg-primary mb-3 mx-auto" style="max-width: 50rem;" >
+    <div class="card-header d-flex justify-content-between align-items-center">#hasstaks | {{ i[0] }} 
+        <form action="/likess" method="post">
+        <button type="submit" name="likes" href="/topic/{{ id }}" class="btn btn-outline-danger btn-light" role="button">
+            <i class="bi bi-heart"></i> {{ likes[loop.index0][0] }}
+            <input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
+            <input type="hidden" name="topic_idr" value="{{ session.user_id  }}">
+            <input type="hidden" name="comm_id" value="{{ i[2] }}">
+            <input type="hidden" name="topic_id" value="{{ id }}">
+        </button> 
+    </form>
+    </div>
     <div class="card-body">
       <p class="card-text">{{ i[1] }}</p>
 </div>
@@ -15,8 +26,6 @@
 
 {% endfor %} 
 
-
-{% if session.user_id %}
 <form action="/topic/{{ id }}" method="post">
 
 <p class="text-center">Add comment<br>
@@ -31,6 +40,30 @@
 </form>
 {% endif %}
 <p>
-
-
+    <h1 class="text-center">{{ title }}</h1>
+    <p class="text-center">creator: {{ creator }}</p>
+    {% for i in comments %}
+    
+    <div class="card text-bg-primary mb-3 mx-auto" style="max-width: 50rem;" >
+        <div class="card-header d-flex justify-content-between align-items-center">#hasstaks | {{ i[0] }} 
+            <form action="/likess" method="post">
+            <button type="submit" name="likes" href="/topic/{{ id }}" class="btn btn-danger btn-light" role="button" disabled>
+                <i class="bi bi-heart"></i> {{ likes[loop.index0][0] }}
+                <input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
+                <input type="hidden" name="topic_idr" value="{{ session.user_id  }}">
+                <input type="hidden" name="comm_id" value="{{ i[2] }}">
+                <input type="hidden" name="topic_id" value="{{ id }}">
+            </button> 
+        </form>
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{ i[1] }}</p>
+    </div>
+    </div>
+    
+    
+    {% endfor %}     
+    <a>
+    <h1 class="text-center text"> If you want to comment or like 
+         <a href="/login">log in</a></h1>
 {% endblock %}
