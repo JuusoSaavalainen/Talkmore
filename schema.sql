@@ -28,7 +28,7 @@ CREATE TABLE comments (
 );
 
 CREATE TABLE hearts (
-    acc_id INTEGER REFERENCES users,
+    acc_id INTEGER REFERENCES users ON DELETE CASCADE,
     comm_id INTEGER REFERENCES comments ON DELETE CASCADE,
     PRIMARY KEY (acc_id, comm_id)
 );
