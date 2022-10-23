@@ -1,20 +1,24 @@
 {% extends "layout.html" %}
 {% block content %}
 
+{% if not titles %}
+<h1 class="text-centered"> EMPTY HERE? GO CREATE TOPIC! </h1>
+{% endif %}
+
     {% for title in titles %}
     <p>
     <div class="card text-center mx-auto mb-3" style="max-width: 50rem;">
-      <div class="card-header">
-        Hashtags here
+      <div class="card-header ">
+        Category: <i>{{ categorys[title.catid-1][1] }}</i>  <i class="bi bi-chat-left-text"></i>  {{ comments[loop.index0][1] }}
       </div>
       <div class="card-body mx-auto mb-3" style="max-width: 50rem;">
         <h5 class="card-title">{{ title.title }}</h5>
-        <p class="card-text">First comment here</p>
+        <p class="card-text"></i> </p>
         <a href="/topic/{{ title.id }}" class="btn btn-primary">Read</a>
       </div>
       <div class="card text-center text-muted">
         <div class="card-footer">
-        add timestamps here / likes
+        {{ title.times.strftime("%Y-%m-%d at %H:%M") }}
       </div>
     </div>
     </div>

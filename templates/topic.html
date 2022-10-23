@@ -3,11 +3,22 @@
 
 {% if session.user_id %}
 <h1 class="text-center">{{ title }}</h1>
-<p class="text-center">creator: {{ creator }}</p>
+<p class="text-center align-items-center">creator: {{ creator }}</p>
+{% if session.user_name == creator %}
+<form action="/deltopic" method="post" class="text-center">
+    <button type="submit" name="del" href="/topic/{{ id }}" class="btn btn-outline-danger btn-light" role="button">
+      delete topic
+      <input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
+      <input type="hidden" name="topic_idr" value="{{ session.user_id  }}">
+      <input type="hidden" name="topic_id" value="{{ id }}">  
+    </button>
+    <p>
+</form>     
+{% endif %}
 {% for i in comments %}
 
 <div class="card text-bg-primary mb-3 mx-auto" style="max-width: 50rem;" >
-    <div class="card-header d-flex justify-content-between align-items-center">#hasstaks | {{ i[0] }} 
+    <div class="card-header d-flex justify-content-between align-items-center">/{{ i[3].strftime("%Y-%m-%d at %H:%M") }} ~/User/{{ i[0] }}
         <form action="/likess" method="post">
         <button type="submit" name="likes" href="/topic/{{ id }}" class="btn btn-outline-danger btn-light" role="button">
             <i class="bi bi-heart"></i> {{ likes[loop.index0][0] }}
@@ -19,7 +30,18 @@
     </form>
     </div>
     <div class="card-body">
-      <p class="card-text">{{ i[1] }}</p>
+      <p class="card-text text-center"><i>{{ i[1] }}</i></p>
+      {% if session.user_name == i[0] %}
+      <form action="/delcom" method="post">
+      <button type="submit" name="del" href="/topic/{{ id }}" class="btn btn-outline-danger btn-light" role="button">
+        delete comment
+        <input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
+        <input type="hidden" name="topic_idr" value="{{ session.user_id  }}">
+        <input type="hidden" name="comm_id" value="{{ i[2] }}">
+        <input type="hidden" name="topic_id" value="{{ id }}">      
+    </button> 
+    </form>
+      {% endif %}
 </div>
 </div>
 
@@ -29,9 +51,7 @@
 <form action="/topic/{{ id }}" method="post">
 
 <p class="text-center">Add comment<br>
-<textarea name="comments" rows="8" cols="40" maxlength="100">
-
-</textarea></p>
+<textarea name="comments" rows="8" cols="40" maxlength="100"></textarea></p>
 <div class="text-center">
   <input type="submit" value="Comment">
   <input type="hidden" name="topic_id" value="{{ id  }}">
@@ -40,34 +60,16 @@
 </form>
 {% endif %}
 
+{% if not session.user_id %}
+
+
+
+{% endif %}
 
 {% if not session.user_id %}
-<p>
-    <h1 class="text-center">{{ title }}</h1>
-    <p class="text-center">creator: {{ creator }}</p>
-    {% for i in comments %}
     
-    <div class="card text-bg-primary mb-3 mx-auto" style="max-width: 50rem;" >
-        <div class="card-header d-flex justify-content-between align-items-center">#hasstaks | {{ i[0] }} 
-            <form action="/likess" method="post">
-            <button type="submit" name="likes" href="/topic/{{ id }}" class="btn btn-danger btn-light" role="button" disabled>
-                <i class="bi bi-heart"></i> {{ likes[loop.index0][0] }}
-                <input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
-                <input type="hidden" name="topic_idr" value="{{ session.user_id  }}">
-                <input type="hidden" name="comm_id" value="{{ i[2] }}">
-                <input type="hidden" name="topic_id" value="{{ id }}">
-            </button> 
-        </form>
-        </div>
-        <div class="card-body">
-          <p class="card-text">{{ i[1] }}</p>
-    </div>
-    </div>
-    
-    
-    {% endfor %}     
-    <a>
-    <h1 class="text-center text"> If you want to comment or like 
-         <a href="/login">log in</a></h1>
+
+<h1 class="text-center text"> If you want to comment or like or do actually anything
+<a href="/login">log in</a></h1>
 {% endif %}
 {% endblock %}

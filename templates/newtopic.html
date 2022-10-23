@@ -8,13 +8,22 @@
     <input type="text" name="Topicname" minlength="1" maxlength="22"></p>
     
     <p>Starting comment<br>
-    <textarea name="comments" rows="8" cols="20" maxlength="100">
-    </textarea></p>
-    
+    <textarea name="comments" rows="8" cols="20" maxlength="100"></textarea></p>
+    <select class="form-select text-center mx-auto" name="category">
+        
+        {% for i in categorys %}
+        <option value="{{ i.id }}">
+            {{i.name}}</option>
+        {% endfor %}
+    </select>
+    <p>
+    <p>
     <input type="submit" value="Create">
     
     <input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
     
+
+
     </form>
     
 </div>

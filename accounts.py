@@ -42,8 +42,8 @@ def check_csrf():
 def user_id():
     return session.get("user_id", 0)
 
-def t_stamp_to_str(timestamp):
-    dt = datetime.fromtimestamp(timestamp)
-    strdate = dt.strftime("-%d-%m-%Y, %H:%M:%S")
-    return strdate
-    
+def delete_acc(user):
+    sqlcom = "DELETE FROM users WHERE id=:user"
+    db.session.execute(sqlcom, {"user":user})
+    db.session.commit()
+    return

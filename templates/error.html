@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="alert alert-danger" role="alert">
-    <a href="/" class="alert-link">Error: {{ message }}</a>
+    <a href="{{ route }}" class="alert-link">Error: {{ message }}</a>
 </div>
 
 {% endblock %}

@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+
+{% if session.user_id %}
+<h2 class="text-center">Nice to meet you {{ session.user_name }}</h2>
+<div class="text-center">
+<form action="/account" method="POST">
+    <div class="text-center btn-outline-danger">
+        <button>
+            Press to delete account
+            <input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
+            <input type="hidden" name="topic_idr" value="{{ session.user_id  }}">
+        </button>
+
+    </div>
+
+</form>
+<p>
+
+<p>
+
+<p>
+
+</form>
+
+Back to <a href="/">homepage</a>
+
+</div>
+{% else %}
+
+<div class="alert alert-danger" role="alert">
+    Error
+</div>
+<p>
+
+{% endif %}
+
+
+{% endblock %}

@@ -22,11 +22,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav mx-auto">
-            <a class="nav-link active" aria-current="page" href="/">About</a>
-            <a class="nav-link" href="#">Account</a>
+            <a class="nav-link active" aria-current="page" href="/about">About</a>
+            <a class="nav-link" href="/account">Account</a>
             <a class="nav-link" href="/newtopic">Create topic</a>
             <a class="nav-link" href="/logout">Logout</a>
             <a class="nav-link disabled">Logged in as {{ session.user_name }}</a>
+            <form action="/result" method="get" class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>        
           </div>
         </div>
       </div>
@@ -46,7 +50,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav mx-auto">
-            <a class="nav-link active" aria-current="page" href="/">About</a>
+            <a class="nav-link active" aria-current="page" href="/about">About</a>
             <a class="nav-link" href="/login">Login</a>
             <a class="nav-link" href="/register">Register</a>
             <a class="nav-link disabled">Create topic</a>

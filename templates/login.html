@@ -7,20 +7,17 @@
 </div>
 <p>
 Back to <a href="/">homepage</a>
-
 {% else %}
-
 <h2 class="text-center">Login to use forum</h2>
 <form action="/login" method="POST">
-<div class="text-center">
-<p>
-Username: <br><input type="text" name="Username">
-<p>
-Password:<br><input type="password" name="Password">
-<p>
-<input type="submit" value="Login">
+    <div class="text-center">
+    <p>
+    Username: <br><input type="text" name="Username">
+    <p> 
+    Password:<br><input type="password" name="Password">
+    <p>
+    <input type="submit" value="Login">
 </form>
-
 </div>
 
 {% endif %}

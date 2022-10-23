@@ -1,0 +1,18 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+{% if session.user_id %}
+<div class="text-center">
+{% for message in messages %}
+<a href="/topic/{{ message[0] }}">{{ message[1] }} was found here !</a><br>
+{% endfor %}
+
+{% endif %}
+{% if not messages %}
+<h1> nothing was found... :(</h1>
+</div>
+{% endif %}
+
+
+{% endblock %}
