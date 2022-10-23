@@ -20,6 +20,8 @@ Myös joitain ulkoasun valintoja voisi tehdä uudelleen käytettävyyden paranta
 
 Aihetunnisteet eivät ole normi käyttäjän lisättävissä, tähän voisi luada ominaisuuden jolla admin voisi lisätä aiheita.
 
+Paljon muutakin olisi mitä voisi parantaa / lisätä , esim etusivu voitaisiin totetuttaa sivuttamalla, etusivun syötettä voitaisiin rajata tunnisteilla jne.
+
 
 ## Demo
 
