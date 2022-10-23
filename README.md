@@ -22,6 +22,7 @@ Aihetunnisteet eivät ole normi käyttäjän lisättävissä, tähän voisi luad
 
 Paljon muutakin olisi mitä voisi parantaa / lisätä , esim etusivu voitaisiin totetuttaa sivuttamalla, etusivun syötettä voitaisiin rajata tunnisteilla jne.
 
+Osa HTML tiedostoista jäivät sekaviksi niitä voisi siistiä koodin luettavuuden kannalta.
 
 ## Demo
 
