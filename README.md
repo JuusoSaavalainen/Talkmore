@@ -1,4 +1,4 @@
-# Talkmore_ // keskustelu foorumi // Tietokantasovellus, kesä 2020
+# :speech_balloon: Talkmore_ // Keskustelu foorumi // Tietokantasovellus, syksy 2022
 
 Helsingin yliopiston [Aineopintojen harjoitustyön tietokantasovellus](https://hy-tsoha.github.io/materiaali/) 
 
@@ -6,7 +6,7 @@ Helsingin yliopiston [Aineopintojen harjoitustyön tietokantasovellus](https://h
 
 ## About
 
-Harjoitustyön aiheeksi valitsin keskustelupalstan. Rekisteröityneet käyttäjät voivat luoda foorumille viestiketjuja, joihin he voivat lisätä viestejä. Käyttäjät voivat tykätä viesteistä. Käyttäjät voivat poistaa omia kommentteja. Käyttäjät voivat poistaa aloittamiaan viestiketjuja(topic).
+Harjoitustyön aiheeksi valitsin keskustelupalstan. Rekisteröityneet käyttäjät voivat luoda foorumille viestiketjuja, joihin he voivat lisätä viestejä. Käyttäjät voivat tykätä viesteistä. Käyttäjät voivat poistaa omia kommentteja. Käyttäjät voivat poistaa aloittamiaan viestiketjuja(topic). Käyttäjät voivat myös poistaa käyttäjänsä.
 
 Viestiketjuja on mahdollista luokitella käyttämällä aihetunnisteita. Foorumin hakutoiminto mahdollistaa viestiketjujen hakemisen ketjujen kommenttejen perusteella.
 
@@ -20,13 +20,16 @@ Myös joitain ulkoasun valintoja voisi tehdä uudelleen käytettävyyden paranta
 
 Aihetunnisteet eivät ole normi käyttäjän lisättävissä, tähän voisi luada ominaisuuden jolla admin voisi lisätä aiheita.
 
+Paljon muutakin olisi mitä voisi parantaa / lisätä , esim etusivu voitaisiin totetuttaa sivuttamalla, etusivun syötettä voitaisiin rajata tunnisteilla jne.
+
+Osa HTML tiedostoista jäivät sekaviksi niitä voisi siistiä koodin luettavuuden kannalta.
 
 ## Demo
 
 Sovellukseen voi tutustua [Herokussa](https://tba-forum.herokuapp.com/).
 
-![Kuvakaappaus sovelluksen etusivusta tietokoneella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/koneelmeny.png)
-![Kuvakaappaus avatusta ketjusta puhelimella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/Screen%20Shot%202022-10-23%20at%2022.44.44.png)
+![Kuvakaappaus sovelluksen etusivusta tietokoneella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/static/koneelmeny.png)
+![Kuvakaappaus avatusta ketjusta puhelimella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/static/Screen%20Shot%202022-10-23%20at%2022.44.44.png)
 
 
 ## Teknologiat
