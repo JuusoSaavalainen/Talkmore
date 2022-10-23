@@ -25,8 +25,8 @@ Aihetunnisteet eivät ole normi käyttäjän lisättävissä, tähän voisi luad
 
 Sovellukseen voi tutustua [Herokussa](https://tba-forum.herokuapp.com/).
 
-![Kuvakaappaus sovelluksen etusivusta tietokoneella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/koneelmeny.png)
-![Kuvakaappaus avatusta ketjusta puhelimella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/Screen%20Shot%202022-10-23%20at%2022.44.44.png)
+![Kuvakaappaus sovelluksen etusivusta tietokoneella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/static/koneelmeny.png)
+![Kuvakaappaus avatusta ketjusta puhelimella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/static/Screen%20Shot%202022-10-23%20at%2022.44.44.png)
 
 
 ## Teknologiat
