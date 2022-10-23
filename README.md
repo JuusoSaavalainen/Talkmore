@@ -1,4 +1,4 @@
-# Talkmore_ // keskustelu foorumi // Tietokantasovellus, kesä 2020
+# Talkmore_ // keskustelu foorumi // Tietokantasovellus, syksy 2022
 
 Helsingin yliopiston [Aineopintojen harjoitustyön tietokantasovellus](https://hy-tsoha.github.io/materiaali/) 
 
