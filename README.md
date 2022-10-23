@@ -24,6 +24,8 @@ Paljon muutakin olisi mitä voisi parantaa / lisätä , esim etusivu voitaisiin 
 
 Osa HTML tiedostoista jäivät sekaviksi niitä voisi siistiä koodin luettavuuden kannalta.
 
+Myös käyttäjien ominaisuuksia voisi lisätä, esim kuva profiiliin.
+
 ## Demo
 
 Sovellukseen voi tutustua [Herokussa](https://tba-forum.herokuapp.com/).
