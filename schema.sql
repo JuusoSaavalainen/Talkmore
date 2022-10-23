@@ -1,4 +1,4 @@
-DROP TABLE users, topic, category, comments, hearts CASCADE;
+DROP TABLE IF EXISTS users, topic, category, comments, hearts CASCADE;
 
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
