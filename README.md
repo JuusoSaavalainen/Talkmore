@@ -1,26 +1,30 @@
-# Talkmore_ // keskustelu foorumi
+# Talkmore_ // keskustelu foorumi // Tietokantasovellus, kesä 2020
 
-[heroku linkki](https://tba-forum.herokuapp.com)
+Helsingin yliopiston [Aineopintojen harjoitustyön tietokantasovellus](https://hy-tsoha.github.io/materiaali/) 
 
-Projektin on tarkoitus olla keskutelu foorumin tyylinen palvelu.
+- [Tietokantarakenteen skeema](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/schema.sql)
 
-Nykyisessä vaiheessa se on alkeellinen foorumi, joka sisältää rekistöröinnin, kirjautumisen, uloskirjauksen, keskustelujen luonnin ja kommentoinnin sekä kommenteista tykkäämisen.
+## Yleistä
 
-Tässä vaiheessa käytettävyyteen on jo käytetty aikaa mutta virheellisiä ratkaisuja löytyy vielä.
+Harjoitustyön aiheeksi valitsin keskustelupalstan. Rekisteröityneet käyttäjät voivat luoda foorumille viestiketjuja, joihin he voivat lisätä viestejä. Käyttäjät voivat tykätä viesteistä. Käyttäjät voivat poistaa omia kommentteja. Käyttäjät voivat poistaa aloittamiaan viestiketjuja(topic).
 
-Viimeisin palautus meni viimetinkaan ja siksi koodista löytyy vielä JUURI NYT joitain purkka ratkaisuja huonoja formatointeja jne.
+Viestiketjuja on mahdollista luokitella käyttämällä aihetunnisteita. Foorumin hakutoiminto mahdollistaa viestiketjujen hakemisen ketjujen kommenttejen perusteella.
 
-Ennen loppupalautusta koodin laatu ja muuttujien nimet ym selkenee.
 
-Sovellus ei siis ole vielä todellakaan valmis , kommentteja tai kirjautumistietoja ei ole rajoitettu ne on vain luotu jotta sovellusta voi testata.
+Sovelluksessa jokaisella käyttäjällä on sama rooli.
 
-Myös paljon ominaisuuksia puuttuu kuten roolit, kommenttejen poistaminen ym. 
+## Demo
 
-Projektin ulkoasua on viilattu mutta siihenkin tulee lisää jos ylimääräistä aikaa löytyy.
+Sovellukseen voi tutustua [Herokussa](https://tba-forum.herokuapp.com/).
 
-SQL skeema on luotu nykyisen vaiheen mukaisesti ja se tulee laajenemaan ja muuttumaan vielä.
+![Kuvakaappaus sovelluksen etusivusta tietokoneella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/koneelmeny.png)
+![Kuvakaappaus avatusta ketjusta puhelimella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/Screen%20Shot%202022-10-23%20at%2022.44.44.png)
 
-Se kuitenkin hyvin alkeellisesti _toimii_ vaikka se sisältää haavoittuvuuksia ym.
 
+## Teknologiat
+
+Sovellus on tehty Pythonin [Flask](https://flask.palletsprojects.com/en/1.1.x/)-kirjaston avulla. HTML-sivujen generoinnissa hyödynnetään [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)-kirjastoa. Ulkoasun tyylittelyyn käytetään [Bootsrappia](https://getbootstrap.com/).
+
+Sovellus käyttää Herokussa [Postgresia](https://www.heroku.com/postgres).
 
 
