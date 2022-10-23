@@ -21,7 +21,7 @@ CREATE TABLE topic (
 
 CREATE TABLE comments (
     id SERIAL PRIMARY KEY,
-    creator_id INTEGER REFERENCES users,
+    creator_id INTEGER REFERENCES users ON DELETE CASCADE,
     topic_id INTEGER REFERENCES topic ON DELETE CASCADE,
     comment TEXT,
     times TIMESTAMP
