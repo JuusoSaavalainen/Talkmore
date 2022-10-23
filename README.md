@@ -18,6 +18,8 @@ Hakutoiminto on hyvin yksipuolinen ja sitä voisi hyvin vielä laajentaa.
 
 Myös joitain ulkoasun valintoja voisi tehdä uudelleen käytettävyyden parantamiseksi
 
+Aihetunnisteet eivät ole normi käyttäjän lisättävissä, tähän voisi luada ominaisuuden jolla admin voisi lisätä aiheita.
+
 
 ## Demo
 
