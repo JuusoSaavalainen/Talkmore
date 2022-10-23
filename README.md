@@ -4,14 +4,20 @@ Helsingin yliopiston [Aineopintojen harjoitustyön tietokantasovellus](https://h
 
 - [Tietokantarakenteen skeema](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/schema.sql)
 
-## Yleistä
+## About
 
 Harjoitustyön aiheeksi valitsin keskustelupalstan. Rekisteröityneet käyttäjät voivat luoda foorumille viestiketjuja, joihin he voivat lisätä viestejä. Käyttäjät voivat tykätä viesteistä. Käyttäjät voivat poistaa omia kommentteja. Käyttäjät voivat poistaa aloittamiaan viestiketjuja(topic).
 
 Viestiketjuja on mahdollista luokitella käyttämällä aihetunnisteita. Foorumin hakutoiminto mahdollistaa viestiketjujen hakemisen ketjujen kommenttejen perusteella.
 
-
 Sovelluksessa jokaisella käyttäjällä on sama rooli.
+
+## Kehitettävää
+
+Hakutoiminto on hyvin yksipuolinen ja sitä voisi hyvin vielä laajentaa. 
+
+Myös joitain ulkoasun valintoja voisi tehdä uudelleen käytettävyyden parantamiseksi
+
 
 ## Demo
 
@@ -23,8 +29,9 @@ Sovellukseen voi tutustua [Herokussa](https://tba-forum.herokuapp.com/).
 
 ## Teknologiat
 
-Sovellus on tehty Pythonin [Flask](https://flask.palletsprojects.com/en/1.1.x/)-kirjaston avulla. HTML-sivujen generoinnissa hyödynnetään [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)-kirjastoa. Ulkoasun tyylittelyyn käytetään [Bootsrappia](https://getbootstrap.com/).
-
+Sovellus on tehty Pythonin [Flask](https://flask.palletsprojects.com/en/1.1.x/)-kirjaston avulla.
+HTML-sivujen generoinnissa hyödynnetään [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)-kirjastoa. 
+Ulkoasun tyylittelyyn käytetään [Bootsrappia](https://getbootstrap.com/).
 Sovellus käyttää Herokussa [Postgresia](https://www.heroku.com/postgres).
 
 
