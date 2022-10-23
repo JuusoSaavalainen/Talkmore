@@ -6,7 +6,7 @@ Helsingin yliopiston [Aineopintojen harjoitustyön tietokantasovellus](https://h
 
 ## About
 
-Harjoitustyön aiheeksi valitsin keskustelupalstan. Rekisteröityneet käyttäjät voivat luoda foorumille viestiketjuja, joihin he voivat lisätä viestejä. Käyttäjät voivat tykätä viesteistä. Käyttäjät voivat poistaa omia kommentteja. Käyttäjät voivat poistaa aloittamiaan viestiketjuja(topic).
+Harjoitustyön aiheeksi valitsin keskustelupalstan. Rekisteröityneet käyttäjät voivat luoda foorumille viestiketjuja, joihin he voivat lisätä viestejä. Käyttäjät voivat tykätä viesteistä. Käyttäjät voivat poistaa omia kommentteja. Käyttäjät voivat poistaa aloittamiaan viestiketjuja(topic). Käyttäjät voivat myös poistaa käyttäjänsä.
 
 Viestiketjuja on mahdollista luokitella käyttämällä aihetunnisteita. Foorumin hakutoiminto mahdollistaa viestiketjujen hakemisen ketjujen kommenttejen perusteella.
 
