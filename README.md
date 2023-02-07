@@ -29,9 +29,8 @@ Myös käyttäjien ominaisuuksia voisi lisätä, esim kuva profiiliin.
 ## Demo
 
 Sovellukseen voi tutustua [Herokussa](https://tba-forum.herokuapp.com/).
-
-![Kuvakaappaus sovelluksen etusivusta tietokoneella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/static/Screenshot%202023-02-08%20at%2001-29-34%20https%20__tba-forum.herokuapp.com.png)
 ![Kuvakaappaus avatusta ketjusta puhelimella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/static/tsoha.png)
+![Kuvakaappaus sovelluksen etusivusta tietokoneella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/static/Screenshot%202023-02-08%20at%2001-29-34%20https%20__tba-forum.herokuapp.com.png)
 
 
 ## Teknologiat
