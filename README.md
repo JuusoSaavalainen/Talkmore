@@ -1,4 +1,4 @@
-# :speech_balloon: Talkmore_ // Keskustelu foorumi // Tietokantasovellus, syksy 2022
+# :speech_balloon: Talkmore_ / Tietokantasovellus, syksy 2022
 
 Helsingin yliopiston [Aineopintojen harjoitustyön tietokantasovellus](https://hy-tsoha.github.io/materiaali/) 
 
