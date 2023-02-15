@@ -1,5 +1,7 @@
 from db import db
 
+#TODO fix the timezone , after redeploy in heroku its 2hrs? off.
+
 def add_topic(title, comment, creator_id, category):
     sqlcom = "INSERT INTO topic (creator_id, title, times, catid) VALUES (:creator_id, :title, NOW(), :category) RETURNING id"
     topic_id = db.session.execute(sqlcom, {"creator_id":creator_id, "title":title, "category":category}).fetchone()[0]
