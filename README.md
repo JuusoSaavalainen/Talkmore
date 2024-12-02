@@ -28,7 +28,7 @@ Myös käyttäjien ominaisuuksia voisi lisätä, esim kuva profiiliin.
 
 ## Demo
 
-Sovellukseen voi tutustua [Herokussa](https://tba-forum.herokuapp.com/). (still hosted 3.12.2023)
+Sovellukseen voi tutustua [Herokussa](https://tba-forum.herokuapp.com/). (still hosted 3.12.2023) (not hosted 2.12.2024)
 
 ![Kuvakaappaus avatusta ketjusta puhelimella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/static/tshomob.png)
 ![Kuvakaappaus sovelluksen etusivusta tietokoneella](https://github.com/JuusoSaavalainen/Tietokantasovellus/blob/main/static/Screenshot%202023-02-08%20at%2001-29-34%20https%20__tba-forum.herokuapp.com.png)
